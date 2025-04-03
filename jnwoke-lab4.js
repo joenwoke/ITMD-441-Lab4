@@ -16,4 +16,9 @@
 		hero.style.backgroundPosition = "center";
 		hero.style.backgroundRepeat = "no-repeat";
 	}
+	
+	// Requirement 4 – Match navbar background to footer
+	const header = document.querySelector('header');
+	const footerColor = getComputedStyle(document.querySelector('footer')).backgroundColor;
+	header.style.backgroundColor = footerColor;
 })();
