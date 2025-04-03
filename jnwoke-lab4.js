@@ -7,4 +7,13 @@
 	
 	//Reuqirement 2 -- Chnage the line below hero headline
 	document.querySelector('p').innerHTML = 'Utilize cutting-edge strategies from Stellar Marketing to help your business <strong><em>thrive and excel.</em></strong>';
+	
+	// Requirement 3 – Change the background image of the hero section
+	const hero = document.querySelector('header');
+	if (hero) {
+		hero.style.backgroundImage = "url('https://picsum.photos/id/683/1280/720')";
+		hero.style.backgroundSize = "cover";
+		hero.style.backgroundPosition = "center";
+		hero.style.backgroundRepeat = "no-repeat";
+	}
 })();
