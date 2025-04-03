@@ -21,4 +21,12 @@
 	const header = document.querySelector('header');
 	const footerColor = getComputedStyle(document.querySelector('footer')).backgroundColor;
 	header.style.backgroundColor = footerColor;
+	
+	//Requirement 5 -- Remove the "Get Started" button
+	const possibleButtons = document.querySelectorAll('a, button');
+	possibleButtons.forEach(btn => {
+		if (btn.textContent.trim() === 'Get Started') {
+			btn.remove();
+		}
+	});
 })();
