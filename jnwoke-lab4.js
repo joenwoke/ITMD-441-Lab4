@@ -59,4 +59,11 @@
     }
   `;
   document.head.appendChild(style);
+  
+  //Requirement 10 -- Change the "Musician's tile image
+  const tiles = document.querySelectorAll('[data-section="product_cards"] > div');
+  const img = tiles[tiles.length - 1]?.querySelector('img');
+  if (img) {
+    img.src = 'https://picsum.photos/id/453/400/300';
+  }
 })();
