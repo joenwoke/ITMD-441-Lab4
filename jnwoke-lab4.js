@@ -42,4 +42,10 @@
   document.querySelectorAll('#services .material-symbols-outlined').forEach(icon => {
     icon.style.color = '#47C714';
   });
+  
+  // Requirement 8 -- Chanage the Digital Marketing Icon to 'ads_click'
+  const digitalIcon = Array.from(document.querySelectorAll('.material-symbols-outlined')).find(el => el.closest('.service, .tile, div')?.textContent.toLowerCase().includes('digital'));
+  if (digitalIcon) {
+    digitalIcon.textContent = 'ads_click';
+  }
 })();
