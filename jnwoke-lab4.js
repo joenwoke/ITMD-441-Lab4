@@ -37,4 +37,9 @@
       heading.style.textAlign = 'center';
     }
   });
+  
+  // Requirement 7 – Make service icons green
+  document.querySelectorAll('#services .material-symbols-outlined').forEach(icon => {
+    icon.style.color = '#47C714';
+  });
 })();
