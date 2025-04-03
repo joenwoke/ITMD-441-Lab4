@@ -48,4 +48,15 @@
   if (digitalIcon) {
     digitalIcon.textContent = 'ads_click';
   }
+  
+  //Requirement 9 -- Change grid tile of solutions at >= 1024px
+  const style = document.createElement('style');
+  style.textContent = `
+    @media (min-width: 1024px) {
+      [data-section="product_cards"] {
+        grid-template-columns: repeat(4, 1fr) !important;
+      }
+    }
+  `;
+  document.head.appendChild(style);
 })();
